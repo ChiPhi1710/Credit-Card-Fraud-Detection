@@ -1,4 +1,11 @@
 # Credit-Card-Fraud-Detection
-Introduction
 Credit card fraud detection is vital in safeguarding financial transactions. It employs advanced technologies like machine learning and anomaly detection to identify fraudulent activities. Challenges include evolving tactics by fraudsters and the need to balance security with user convenience. Collaboration between institutions and cybersecurity experts is crucial for staying ahead of fraudsters. Continuous monitoring of transactions helps detect suspicious behaviour in real-time. Fraud detection systems analyse large volumes of data to identify patterns indicative of fraud. Timely intervention upon detection minimizes financial losses and protects consumers. Enhanced security measures such as tokenization further bolster fraud prevention efforts. Finally, credit card fraud detection preserves trust in financial systems and ensures a secure digital economy.
+
+In this project, the dataset was the Credit Card Fraud Detection dataset posted on Kaggle, which contains credit card transactions that happened in September 2013 by European clients for two days. It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, it is impossible to provide the original features and more background information about the data. Features V1, V2, … V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependent cost-sensitive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
+
+This project explored, handled, and visualised relevant data using Pandas, numpy, matplotlib, and seaborn libraries. Then, using the scikit-learn library, develop a prediction model capable of learning and detecting whether a transaction is or is not fraudulent. The data was split into 2 parts which are a training set and a testing set. The random forest classifier algorithm was used to test the model.
+
+With a ROC-AUC score of 0.84, the Random Forrest Classifier is generally considered good. The Random Forrest Classifier was considered to have performed well in this project's purpose to identify fraudulent transactions as soon as they occurred.
+
+
 
